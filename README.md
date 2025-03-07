@@ -1,6 +1,6 @@
 **Score Counter Web App**
 
-                        This project is a basic score counter web application designed for tracking scores in games or other activities. It's built entirely with client-side technologies (HTML, CSS, and JavaScript) for simplicity and ease of deployment.
+This project is a basic score counter web application designed for tracking scores in games or other activities. It's built entirely with client-side technologies (HTML, CSS, and JavaScript) for simplicity and ease of deployment.
 
 **Features**:
 1. **Add/Remove Players**: Easily add new players and remove existing ones.
