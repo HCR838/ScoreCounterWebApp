@@ -1,0 +1,131 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px; /* Reduced max width */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 300; /* Lighter font weight */
+}
+
+.player {
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Subtle border */
+}
+
+.player h2 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.player input {
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 40px;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.player button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.player button:hover {
+    color: #007bff; /* Highlight on hover */
+}
+
+#timer {
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+#darkModeToggle, #addPlayer, #resetAll {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    margin: 10px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#darkModeToggle:hover, #addPlayer:hover, #resetAll:hover {
+    background-color: #eee;
+}
+
+.dark-mode #darkModeToggle, .dark-mode #addPlayer, .dark-mode #resetAll {
+    border-color: #555;
+    color: #eee;
+}
+
+.dark-mode #darkModeToggle:hover, .dark-mode #addPlayer:hover, .dark-mode #resetAll:hover {
+    background-color: #333;
+}
+
+/* ... (existing CSS) ... */
+
+#playerEditCard {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#playerEditCard.dark-mode {
+    background-color: #333;
+    color: #eee;
+    border: 1px solid #555;
+}
+
+.card-content label {
+    display: block;
+    margin-top: 10px;
+}
+
+.card-content input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.card-content button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
